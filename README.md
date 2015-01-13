@@ -6,7 +6,7 @@
 
 ## Part 2:Application: Integrating Into Rails App
 
-Let's go back to the `blog_app` we built over the weekend and integrate our knowledge of the Rails associations.
+Let's go back to the `blog_app` we built over the weekend that already has both `users` and `articles` and integrate some of our knowledge of the Rails associations. This will require some mind numbing and frustrating refactoring, so stay diligent, and work together.
 
 Add a `one-to-many` assocciation betweeen `articles` and `users`. This means we can get rid of the silly `author` column in the `Article` model and use the `user`.
 
