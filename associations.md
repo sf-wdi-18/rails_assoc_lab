@@ -52,7 +52,7 @@ We want to generate these models and setup the associations. First let's setup t
 * Now let's generate the `Book` model. Keep in mind that here we will need a column for the foriegn key to associate to  the `Author` model.
 
 	```
-	rails g model book title:string description:text publication_year:integer isbn:integer author_id:integer
+	rails g model book title:string description:text publication_year:integer isbn:string author_id:integer
 	```
 * Always be sure to migrate your changes
 
