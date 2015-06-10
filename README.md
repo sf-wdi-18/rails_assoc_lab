@@ -66,7 +66,7 @@ We want to generate these models and setup the associations. First let's setup t
 	end
 	```
 	
-* Setup the associations to `auhor` for `book`
+* Setup the associations to `author` for `book`
 
 	```
 	class Author < ActiveRecord::Base
