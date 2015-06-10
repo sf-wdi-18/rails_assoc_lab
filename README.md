@@ -213,7 +213,7 @@ rake db:migrate
 * Setup the association between the `BooksLibrary` model and `Library`
 
   ```
-  class BookLibrary < ActiveRecord::Base
+  class BooksLibrary < ActiveRecord::Base
     belongs_to :book
     belongs_to :library
   end
@@ -274,7 +274,7 @@ rake db:migrate
 * Type the following in rails console:
 
   ```
-  > BookLibrary.all.count
+  > BooksLibrary.all.count
   ```
   * How many `BooksLibrary` objects are there?
   * Why does that make sense?
