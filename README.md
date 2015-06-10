@@ -299,18 +299,6 @@ rake db:migrate
 
 ## Bonus
 
-Add a User model to your application.  A User has many favorite books.
-
-* You will have to add a `user_id` foreign key to your `books` table
-
-```
-rails g migration AddUserIdToBooks user_id:integer
-```
-* Don't forget to migrate!
-
-
-
-* Use your knowledge of `many-to-many` (N:N) to implement the association in the `user` and `book` models
-* Test the association in Console
+Add a User model to your application.  A User has many favorite books, and a book can be favorited by many users.  Hmm, what kind of relationship is that?
 
   
