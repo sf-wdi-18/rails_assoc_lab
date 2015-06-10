@@ -1,5 +1,0 @@
-| `id:integer` | `first_name:string` | `last_name:string` | `y_o_b:integer` | `y_o_d:integer` |
-| :---  | :---  | :---  | :---  | :---  |
-| 1 | Rudyard | Kipling | 1865 | 1936 |
-| 2 | Lewis | Carroll | 1832 | 1892 |
-| 3 | H.G.  | Wells |  1866 | 1946  |

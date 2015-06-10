@@ -1,7 +1,0 @@
-| `id:integer` | `title:string` | `description:string` | `publication_year:integer` | `isbn:string` | `author_id:integer` |
-| :---  | :---  | :---  | :---  | :---  | :---  |
-|1 | The Jungle Book | The Jungle Book is a collection of stories by English author Rudyard Kipling. The stories were first published in magazines in 1893–94. The original publications contain illustrations, some by Rudyard's father, John Lockwood Kipling. | 1894 | 9788497896696 | 1 |
-| 2 | Alice's Adventures in Wonderland | Alice's Adventures in Wonderland is an 1865 novel written by English author Charles Lutwidge Dodgson under the pseudonym Lewis Carroll. | 1865 | 9781552465707 | 2 |
-| 3 | Rikki-Tikki-Tavi |"Rikki-Tikki-Tavi" is a short story in The Jungle Book by Rudyard Kipling about the adventures of a valiant young mongoose. The story has often been anthologized, and has been published more than once as a short book in its own right. | 1894 | 1484123689 | 1 |
-| 4 | Through the Looking-Glass | Through the Looking-Glass, and What Alice Found There is a novel by Lewis Carroll, the sequel to Alice's Adventures in Wonderland. It is based on his meeting with another Alice, Alice Raikes | 1871 | 9781489500182 | 2 |
-| 5 | The Time Machine | The Time Machine is a science fiction novel by H. G. Wells, published in 1895. Wells is generally credited with the popularisation of the concept of time travel by using a vehicle that allows an operator to travel purposefully and selectively | 1895  | 9781423794417 | 3 |
