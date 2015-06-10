@@ -202,7 +202,7 @@ enough to change `Library` to `Libraries`, but we need to pluralize `Books` for 
 rake db:migrate
 ```
 
-* Setup the association between the `BooksLibrary` model and `Book`
+* Set up the association between the `BooksLibrary` model and `Book` model
 
   ```
   class BooksLibrary < ActiveRecord::Base
@@ -210,7 +210,7 @@ rake db:migrate
   end
   ```
 
-* Setup the association between the `BooksLibrary` model and `Library`
+* Set up the association between the `BooksLibrary` model and `Library` model
 
   ```
   class BooksLibrary < ActiveRecord::Base
@@ -219,7 +219,7 @@ rake db:migrate
   end
   ```
 
-* Setup the association between the `Book` model and the `BooksLibrary` model
+* Set up the association between the `Book` model and `BooksLibrary` model
 
   ```
   class Book < ActiveRecord::Base
@@ -228,7 +228,7 @@ rake db:migrate
   end
   ```
 
-* Setup the association between the `Book` model and the `Library` model through the join table model
+* Set up the association between the `Book` model and the `Library` model through the join table model
 
   ```
   class Book < ActiveRecord::Base
@@ -238,7 +238,7 @@ rake db:migrate
   end
   ```
 
-* Setup the association between the `Library` model and the `BooksLibrary` models.
+* Set up the association between the `Library` model and the `BooksLibrary` model.
 
   ```
   class Library < ActiveRecord::Base
