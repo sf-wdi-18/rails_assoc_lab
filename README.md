@@ -179,7 +179,7 @@ A very common form of association for the many-to-many association is the `libra
 
 ### Implementation 
 
-* Generate a model for the `BooksLibrary`
+* Generate a model called `BooksLibrary` with columns to represent foreign keys
 
 -> `Books` is pluralized and `Library` is not because we ultimately want Rails to create a table called
 `BooksLibaries`.  Rails will pluralize model names in order to generate table names (it's smart
