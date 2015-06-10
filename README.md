@@ -40,7 +40,7 @@ In this example we have shown how to associate tables using the concept of a `fo
 
 ### Implementation
 
-We want to generate these models and setup the associations. First let's setup the `Authors` table.
+We want to generate these models and setup the associations. First let's setup the `Author` model.
 
 * Note that in the following `y_o_b` and `y_o_d` could be called `yob` and `yod` to cut down on typing.
 
