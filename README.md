@@ -310,7 +310,7 @@ rails g migration AddUserIdToBooks user_id:integer
 
 
 
-* Use your knowledge of `one-to-many` to implement the association in the `user` and `book` models
+* Use your knowledge of `many-to-many` (N:N) to implement the association in the `user` and `book` models
 * Test the association in Console
 
   
