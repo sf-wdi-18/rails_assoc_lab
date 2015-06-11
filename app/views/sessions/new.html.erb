@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+</head>
+<body>
+  <div class='container'>
+  <br><br>
+
+    <div class='row'>
+      <div class='col-md-6'>
+        <div class='well'>
+
+          <div class='row'>
+            <div class='col-md-6 col-md-offset-1'>
+              <h3>Login</h3>
+            </div>
+          </div>
+          <br>
+
+          <%= form_for(@user, sessions_path) do |f| %>
+            <div class='row'>
+              <div class='col-md-4 text-right'>
+                <%= f.label "Email: " %>
+              </div>
+              <div class='col-md-7'>
+                <%= f.text_field(:email, { autofocus: "true" }) %>
+              </div>
+            </div>
+            <br>
+            <div class='row'>
+              <div class='col-md-4 text-right'>
+                <%= f.label "Password: " %>
+              </div>
+              <div class='col-md-7'>
+                <%= f.text_field(:password, { type: "password" }) %>
+              </div>
+            </div>
+            <br>
+            <div class='row'>
+              <div class='col-md-11 text-right'>
+                <%= f.submit("Login", class: "btn btn-lg btn-primary") %>
+                <br><br>
+                <p>Not registered?&nbsp&nbsp<span><%= link_to('Sign up here', signup_path) %></span></p>
+              </div>
+            </div>
+            <br>
+          <% end %>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
