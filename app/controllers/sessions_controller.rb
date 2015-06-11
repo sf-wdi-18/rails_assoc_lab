@@ -33,7 +33,8 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    #TODO: logout the current user
+    session[:user_id] = nil
+    redirect_to('/', flash:{ success: "Logged out successfully" })
   end
 
   private

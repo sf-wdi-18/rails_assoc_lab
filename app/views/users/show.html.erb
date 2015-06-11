@@ -7,16 +7,16 @@
 <body>
   <br><br>
   <div class='container'>
-
     <div class='row'>
       <div class='col-md-6'>
-        <div class='well'>
 
+        <div class='well'>
+        <!-- Within the well, we have 12 columns to work with.  -->
           <div class='row'>
-            <div class='col-md-6 col-md-offset-1'>
+            <div class='col-md-6'>
               <h3>User Profile</h3>
             </div>
-            <div class='col-md-3 text-right'>
+            <div class='col-md-4 text-right'>
               <h3> <%= link_to edit_user_path(@user) do %>
                     <span class='glyphicon glyphicon-pencil'></span>
                   <% end %>
@@ -34,21 +34,23 @@
           </div>
           <br>
 
-          <%= form_for(@user) do |f| %>
-            <div class='row'>
-              <div class='col-md-3 text-right'>
-                <%= label_tag("Email: ") %>
-              </div>
-              <div class='col-md-8'>
-                <p> <%= @user.email %> </p>
-              </div>
+          <div class='row'>
+            <div class='col-md-3 text-right'>
+              <%= label_tag("Email: ") %>
             </div>
-            <br>
-          <% end %>
-          <br>
+            <div class='col-md-8'>
+              <p> <%= @user.email %> </p>
+            </div>
+          </div>
+          <br><br>
+
+          <div class='row'>
+            <div class='col-md-11 text-right'>
+              <%= link_to 'Logout', logout_path, class: "btn btn-primary" %>
+            </div>
+          </div>
 
         </div>  <!-- well -->
-
       </div>
     </div>
   </div>
