@@ -51,8 +51,9 @@ GEM
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.2.19)
     builder (3.2.2)
-    byebug (5.0.0)
-      columnize (= 0.9.0)
+    byebug (1.1.1)
+      columnize (~> 0.3.6)
+      debugger-linecache (~> 1.2.0)
     coderay (1.1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -61,8 +62,9 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1.1)
-    columnize (0.9.0)
+    columnize (0.3.6)
     debug_inspector (0.0.2)
+    debugger-linecache (1.2.0)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.5.2)
@@ -93,6 +95,9 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-byebug (1.0.1)
+      byebug (~> 1.1.1)
+      pry (>= 0.9.10)
     pry-rails (0.3.4)
       pry (>= 0.9.10)
     rack (1.6.1)
@@ -183,11 +188,12 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   better_errors
   bootstrap-sass
-  byebug
+  byebug (~> 1.1.1)
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
   pg
+  pry-byebug
   pry-rails
   rails (= 4.2.0)
   rspec-rails (~> 3.0)

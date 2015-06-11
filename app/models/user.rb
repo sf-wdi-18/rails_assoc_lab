@@ -35,7 +35,6 @@ class User < ActiveRecord::Base
 
   def self.confirm(email_param, password_param)
     user = User.find_by({email: email_param})
-    binding.pry
     user.authenticate(password_param)
   end
 
