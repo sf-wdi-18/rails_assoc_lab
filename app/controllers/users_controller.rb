@@ -5,12 +5,17 @@ class UsersController < ApplicationController
   end
 
   def create
-    binding.pry
     @user = User.create(user_params)
+    if @user.valid?
+      redirect_to(login_path, flash:{ success: "Registered successfully. Please login." })
+    else
+      flash.now[:alert] = "There was a problem with your registration"
+      render :new
+    end
   end
 
   def show
-    @user = User.find session[:user_id]
+    @user = User.find(session[:user_id])
   end
 
   private
