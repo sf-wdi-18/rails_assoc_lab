@@ -20,20 +20,14 @@
 .nav > li.dropdown > a,
 .nav > li.dropdown.open > a,
 .nav > li.dropdown.open.active > a:hover,
-.nav > li.dropdown.open > ul.dropdown-menu > li > a:hover
-{
+.nav > li.dropdown.open > ul.dropdown-menu > li > a:hover {
   background-color: #286090;
   color: white;
 }
 
-#user_email {
+#user_email, #email,
+#user_password, #password,
+#user_password_confirmation, #password_confirmation {
   width: 100%;
 }
 
-#user_password {
-  width: 100%;
-}
-
-#user_password_confirmation {
-  width: 100%
-}
