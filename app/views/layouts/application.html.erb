@@ -45,8 +45,10 @@
       <%= content_tag :div, value, class: "text-center alert alert-warning" %>
     <% elsif key == "alert" %>
       <%= content_tag :div, value, class: "text-center alert alert-danger" %>
-    <% else %>
+    <% elsif key == "login_ok" %>
       <%= content_tag :div, value, class: "text-center alert alert-success" %>
+    <% else %>
+      <%= content_tag :div, value, class: "text-center alert alert-info" %>
     <% end %>
   <% end %>
 
