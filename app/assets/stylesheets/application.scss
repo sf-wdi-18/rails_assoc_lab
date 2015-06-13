@@ -15,6 +15,24 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.nav > li.dropdown > a:hover {
+  color: white;
+  background-color: #286090;
+}
+
+.navbar,
+.navbar-header > a,
+.nav > li.dropdown > a,
+.nav > li.dropdown.open.active > a:hover,
+.nav > li.dropdown.open > a,
+.nav > li.dropdown.open > ul.dropdown-menu > li > a:hover
+{
+  background-color: #286090;
+  color: white;
+}
+
+
+
 #user_email {
   width: 100%;
 }

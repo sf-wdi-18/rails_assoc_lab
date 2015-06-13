@@ -6,19 +6,51 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body class = "container text-center">
+<body>
 
-<% flash.each do |key, value| %>
-  <% if key == "notice" %>
-    <%= content_tag :div, value, class: "text-center alert alert-warning" %>
-  <% elsif key == "alert" %>
-    <%= content_tag :div, value, class: "text-center alert alert-danger" %>
-  <% else %>
-    <%= content_tag :div, value, class: "text-center alert alert-success" %>
+  <nav class="navbar navbar-static-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse_button">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Awesome Auth App</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <% if current_user %>
+        <div class="collapse navbar-collapse" id="collpase_button">
+          <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><%= current_user.email %><span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Edit Profile</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Logout</a></li>
+                </ul>
+              </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      <% end %>
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- Flash messaging -->
+  <% flash.each do |key, value| %>
+    <% if key == "notice" %>
+      <%= content_tag :div, value, class: "text-center alert alert-warning" %>
+    <% elsif key == "alert" %>
+      <%= content_tag :div, value, class: "text-center alert alert-danger" %>
+    <% else %>
+      <%= content_tag :div, value, class: "text-center alert alert-success" %>
+    <% end %>
   <% end %>
-<% end %>
 
-<%= yield %>
+  <%= yield %>
 
 </body>
 </html>
